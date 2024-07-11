@@ -97,17 +97,20 @@ body {
   margin: 0 auto;
 }
 
-.custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 45px 15px 15px;
-  color: #000000;
-  text-align: center;
-  position: relative;
-  text-transform: uppercase;
+.logo .navbar-brand{
+  color: #5AACCB;
+}
+.logo .navbar-brand:hover{
+  color: #5AACCB;
+}
+.nav-link.active {
+color: black !important;
+/* background-color: #5AACCB; */
+border-bottom: 4px solid #5AACCB;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color: #5AACCB;
-  color: #ffffff;
+.scrolled{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .custom_nav-container .form-inline {
@@ -184,6 +187,7 @@ a:focus {
   -webkit-transition: all .3s;
   transition: all .3s;
   outline: none;
+  border: none;
 }
 
 .custom_nav-container .navbar-toggler span {
@@ -198,6 +202,7 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  
 }
 
 .custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
@@ -242,6 +247,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   padding: 45px 0 165px 0;
+  padding-top: 6rem;
 }
 
 .slider_section .row {
@@ -452,16 +458,16 @@ a:focus {
 }
 
 .info_section .info_news .info_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: start;
+-ms-flex-align: start;
+align-items: flex-start;
 }
 
 .info_section .info_news .info_contact a {
@@ -533,16 +539,6 @@ a:focus {
 
 /* end footer section*/
 
-@media(max-width:768px){
-  .fasilitas-container{
-    margin-top: 2rem;
-  }
-
-  .maps{
-    margin-top: 2rem;
-  }
-}
-
 .layanan-teks{
   background-color: #E4E9EC;
 }
@@ -560,25 +556,52 @@ p.deskripsi-layanan{
   font-size: 14px;
 }
 
-.layanan {
-width: 120px;
-height: 120px;
-background-color: #1AC0BB;
+.layanann {
+  display: flex;
+  align-items: stretch; /* Membuat elemen dalam flex container menyesuaikan tinggi secara otomatis */
+  /* background-color: #d3dce6; */
+  padding: 10px;
 }
 
-.layanan h6 {
-font-size: 2rem;
-line-height: 120px;
-color: white;
-text-align: center;
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3c3c3;
+  width: 100px;
+  color: #fff;
+  flex: 0 0 auto; /* Memastikan elemen number tidak meregang */
 }
 
-.layanan-teks {
-flex: 1;
-padding-left: 10px;
+.tekss {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex: 1; /* Membuat elemen teks menyesuaikan lebar container */
+  background-color: #E4E9EC;
+  padding-left: 20px;
+  padding-top: 10px;
 }
-.layanan-list {
-padding-top: 1rem;
+
+.tekss h6{
+  font-weight: bold;
+}
+
+.tekss p{
+  text-align: left;
+}
+
+.btn-kirim{
+  background-color: #5AACCB;
+}
+
+.btn-kirim:hover{
+  border: 2px solid #5AACCB;
+}
+
+.btn-kirim:hover i,.btn-kirim:hover span{
+  color: #5AACCB;
 }
 
 .layanan-image{
@@ -597,8 +620,6 @@ padding-top: 1rem;
             position: relative;
             width: 300px; /* Adjust as needed */
             height: 200px; /* Adjust as needed */
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            border-radius: 4rem;
         }
 
         .fasilitas-container img {
@@ -673,4 +694,36 @@ padding-top: 1rem;
 
 .maps-container{
   background-color: #55abca81;
+}
+
+.gmap{
+  position: relative;
+  height: 100%;
+
+}
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+}
+
+#spinner.hidden {
+display: none;
+}
+
+@media(max-width:768px){
+  .fasilitas-container{
+    margin-top: 2rem;
+  }
+
+  .maps{
+    margin-top: 2rem;
+  }
+
+  #spinner{
+    top: 50%;
+    left: 50%;
+  }
+
 }
