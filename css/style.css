@@ -726,4 +726,12 @@ display: none;
     left: 50%;
   }
 
+    .logo{
+    padding-left: 2em;
+  }
+
+  .navbar-toggler{
+    margin-right: 1em;
+  }
+
 }
