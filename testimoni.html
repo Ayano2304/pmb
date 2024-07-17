@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-inline: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+     .swiper-button-prev {
+            left: 0px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <div class="logo d-flex align-items-center gap-2">
+                <a class="navbar-brand fw-bold fs-4" href="#"> PMB </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="activateLink(this)">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layanan.html" onclick="activateLink(this)">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fasilitas.html" onclick="activateLink(this)">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" onclick="activateLink(this)">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lokasi.html" onclick="activateLink(this)">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html" onclick="activateLink(this)">Tentang Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sub-pages">
+        <div class="container">
+            <div class="row">
+                <di class="col-md-6 d-flex align-items-center justify-content-center order-2 order-md-1">
+                    <div>
+                        <h1 class="text-white fw-bold text-center text-md-start">Galleri Kami</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium eius
+                            consectetur molestias eveniet
+                            quasi praesentium porro debitis quos nulla.</p>
+                    </div>
+
+                </di>
+                <di class="col-md-6 d-flex align-items-center order-1 order-md-2">
+                    <img src="images/galleri.png" class="img-fluid" alt="">
+                </di>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimoni py-5">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://static.zerochan.net/Tateyama.Ayano.full.1554723.jpg" class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://cdn.donmai.us/original/30/e8/30e837c30179c884a8f570ff8f79baef.jpg" class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://i.pinimg.com/564x/15/6f/dd/156fddd930678a08e1de11410ff2b9cd.jpg" class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://static.zerochan.net/Tateyama.Ayano.full.1554723.jpg" class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info_section layout_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="info_course">
+                        <h5>PMB Novi Noer Asnie</h5>
+                        <p>Praktik Mandiri Bidan Novi Noer Asnie berkomitmen untuk
+                            memberikan pelayanan kesehatan yang holistik, profesional, dan ramah
+                            kepada seluruh pasien. Kami Mulai Beroperasi Dari Tahun 2020 Sampai Sekarang</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5 offset-md-1">
+                    <div class="info_news">
+                        <h5>IKUTI SOSIAL MEDIA KAMI</h5>
+                        <div class="info_contact">
+                            <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Dusun Krajan No.36 RT 01/01
+                                Des.Sirnabaya Kec.Teluk Jambe Timur Karawang </a>
+                            <a href=""> <i class="fa fa-envelope" aria-hidden="true"></i> novinoerasnie@gmail.com </a>
+                            <a href=""> <i class="fa fa-phone" aria-hidden="true"></i> 0878-0344-1999 </a>
+                            <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> 0878-0344-1999 </a>
+                            <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> Almahyra_BabySpa_Karawang
+                            </a>
+                            <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> Almahyra Babyspa Karawang </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="">Ayano</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is <= 640px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

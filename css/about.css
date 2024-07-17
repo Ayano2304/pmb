@@ -1,0 +1,44 @@
+section.page-hero{
+height: 70vh;
+background-image: url('../images/about-page-min.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+}
+
+section.page-hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+section.page-hero h4 {
+      color: white;
+      font-size: 48px;
+      font-weight: 600;
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+
+section.page-hero h4 span{
+    color: #5AACCB;
+}
+
+.group-container{
+    width: 500px;
+    background-color: crimson;
+}
+
+@media(max-width:768px){
+    section.page-hero h4{
+        font-size: 40px;
+    }
+}

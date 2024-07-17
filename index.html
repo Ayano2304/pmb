@@ -1,518 +1,426 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+<!doctype html>
+<html lang="en">
 
-    <title>PMB</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PMB Novi Noer Asni
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-inline: 2rem;
+            padding-bottom: 2rem;
+        }
 
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
-    <!-- nice select -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-    <!-- datepicker -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-  </head>
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-  <body>
-    <div class="hero_area">
-      <!-- header section strats -->
-      <header class="header_section">
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
-          <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
-              <h3 class="">PMB</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <div class="logo d-flex align-items-center gap-2">
+                <a class="navbar-brand fw-bold fs-4" href="#"> PMB </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> Layanan </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Fasilitas </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="appointment.html"> Lokasi </a>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" onclick="activateLink(this)">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layanan.html" onclick="activateLink(this)">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fasilitas.html" onclick="activateLink(this)">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" onclick="activateLink(this)">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lokasi.html" onclick="activateLink(this)">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html" onclick="activateLink(this)">Tentang Kami</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
         </div>
-      </header>
-      <!-- end header section -->
-      <!-- slider section -->
-      <section class="slider_section position-relative">
+    </nav>
+
+    <section class="hero-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 d-flex order-2 order-md-1 align-items-center flex-md-row flex-column">
+                    <div class="sosmed d-flex flex-md-column flex-row order-2 order-md-1 align-items-center justify-content-between"
+                        style="height: 150px;">
+                        <a href="https://www.instagram.com/almahyra_babyspa_karawang?igsh=MXZreWg2OWhyMGo0Zw==">
+                            <svg width="58px" height="58px" viewBox="0 0 3364.7 3364.7"
+                                xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs>
+                                        <radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset=".09" stop-color="#fa8f21"></stop>
+                                            <stop offset=".78" stop-color="#d82d7e"></stop>
+                                        </radialGradient>
+                                        <radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
+                                            <stop offset="1" stop-color="#8c3aaa"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                    <path
+                                        d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+                                        fill="url(#0)"></path>
+                                    <path
+                                        d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+                                        fill="url(#1)"></path>
+                                    <path
+                                        d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/6287803441999">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-label="WhatsApp" role="img"
+                                viewBox="0 0 512 512" width="60px" height="60px" fill="#000000" stroke="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
+                                    <path fill="#25d366" stroke="#ffffff" stroke-width="26"
+                                        d="M123 393l14-65a138 138 0 1150 47z"></path>
+                                    <path fill="#ffffff"
+                                        d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column left-teks order-1 order-md-2">
+                        <h1 class="hero-h1">Menyambut Kehidupan dengan Keahlian dan <br>Kasih Sayang</h1>
+                        <p class="hero-p">Apakah Anda mencari perawatan kesehatan yang penuh kasih dan profesional untuk
+                            Anda dan buah hati tercinta? Praktik
+                            Mandiri Bidan Novi Noer Asnie hadir untuk memberikan layanan terbaik bagi kesehatan ibu dan
+                            anak.</p>
+                        <p class="fw-bold fs-5 unggul">Keunggulan Kami </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <div class="kotak d-flex flex-column align-items-center justify-content-center">
+                                <svg width="65px" height="65px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.5 8.5C21.5 7.09554 21.5 6.39331 21.1629 5.88886C21.017 5.67048 20.8295 5.48298 20.6111 5.33706C20.1699 5.04224 19.5774 5.00529 18.496 5.00066C18.5001 5.29206 18.5 5.59655 18.5 5.91051L18.5 6V7.25H19.5C19.9142 7.25 20.25 7.58579 20.25 8C20.25 8.41421 19.9142 8.75 19.5 8.75H18.5V10.25H19.5C19.9142 10.25 20.25 10.5858 20.25 11C20.25 11.4142 19.9142 11.75 19.5 11.75H18.5V13.25H19.5C19.9142 13.25 20.25 13.5858 20.25 14C20.25 14.4142 19.9142 14.75 19.5 14.75H18.5V21.25H17V6C17 4.11438 17 3.17157 16.4142 2.58579C15.8284 2 14.8856 2 13 2H11C9.11438 2 8.17157 2 7.58579 2.58579C7 3.17157 7 4.11438 7 6V21.25H5.5V14.75H4.5C4.08579 14.75 3.75 14.4142 3.75 14C3.75 13.5858 4.08579 13.25 4.5 13.25H5.5V11.75H4.5C4.08579 11.75 3.75 11.4142 3.75 11C3.75 10.5858 4.08579 10.25 4.5 10.25H5.5V8.75H4.5C4.08579 8.75 3.75 8.41421 3.75 8C3.75 7.58579 4.08579 7.25 4.5 7.25H5.5V6L5.49999 5.9105C5.49996 5.59655 5.49992 5.29206 5.50403 5.00066C4.42262 5.00529 3.83008 5.04224 3.38886 5.33706C3.17048 5.48298 2.98298 5.67048 2.83706 5.88886C2.5 6.39331 2.5 7.09554 2.5 8.5V21.25H2C1.58579 21.25 1.25 21.5858 1.25 22C1.25 22.4142 1.58579 22.75 2 22.75H22C22.4142 22.75 22.75 22.4142 22.75 22C22.75 21.5858 22.4142 21.25 22 21.25H21.5V8.5ZM12 4.25C12.4142 4.25 12.75 4.58579 12.75 5V6.25H14C14.4142 6.25 14.75 6.58579 14.75 7C14.75 7.41421 14.4142 7.75 14 7.75H12.75V9C12.75 9.41421 12.4142 9.75 12 9.75C11.5858 9.75 11.25 9.41421 11.25 9V7.75H10C9.58579 7.75 9.25 7.41421 9.25 7C9.25 6.58579 9.58579 6.25 10 6.25H11.25V5C11.25 4.58579 11.5858 4.25 12 4.25ZM9.25 12C9.25 11.5858 9.58579 11.25 10 11.25H14C14.4142 11.25 14.75 11.5858 14.75 12C14.75 12.4142 14.4142 12.75 14 12.75H10C9.58579 12.75 9.25 12.4142 9.25 12ZM9.25 15C9.25 14.5858 9.58579 14.25 10 14.25H14C14.4142 14.25 14.75 14.5858 14.75 15C14.75 15.4142 14.4142 15.75 14 15.75H10C9.58579 15.75 9.25 15.4142 9.25 15ZM12 18.25C12.4142 18.25 12.75 18.5858 12.75 19V21.25H11.25V19C11.25 18.5858 11.5858 18.25 12 18.25Z"
+                                            fill="#ffffff"></path>
+                                    </g>
+                                </svg>
+                                <h6 class="text-white fw-bold text-center ">Fasilitas <br>Lengkap</h6>
+                            </div>
+                            <div class="kotak d-flex flex-column align-items-center justify-content-center">
+                                <svg width="65px" height="65px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                            fill="#91cbe0"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 7.25C12.4142 7.25 12.75 7.58579 12.75 8V11.6893L15.0303 13.9697C15.3232 14.2626 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2626 15.3232 13.9697 15.0303L11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12V8C11.25 7.58579 11.5858 7.25 12 7.25Z"
+                                            fill="white"></path>
+                                    </g>
+                                </svg>
+                                <h6 class="text-white fw-bold text-center">Layanan <br>08.00 - 17.00</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 order-1 order-md-2 right-img">
+                    <img src="./images/hero-bg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sejarah-singkat pt-5">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
-              <div class="detail-box">
-                <div class="text-md-left text-center">
-                  <h1>health care</h1>
-                  <p>
-                    Excepturi quam cum ex, expedita inventore adipisci reprehenderit incidunt doloribus delectus quod, placeat nulla culpa nemo, mollitia natus! Beatae illo quas nemo omnis ullam placeat, obcaecati ducimus rem id.
-                    Consectetur.
-                  </p>
-                  <a href=""> Read More </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 order-1 order-md-2">
-              <div class="img-box">
-                <img src="images/hero.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end slider section -->
-    </div>
+            <div class="row justify-content-center">
+                <h1 class="text-center">Tentang Kami</h1>
+                <div class="col-md-7">
+                    <p class="text-center pt-3">Pada bulan Agustus 2016, kami mengikuti pelatihan profesional oleh CV.
+                        Satu
+                        Visi Corp di Hotel Melawai, Jakarta.
+                        Pelatihan ini memberikan kami pengetahuan dan keterampilan dalam bidang layanan kesehatan
+                        homecare.
+                        Mulai September 2016, kami menawarkan layanan homecare dengan mendatangi rumah-rumah pasien
+                        untuk
+                        memberikan perawatan
+                        dan dukungan kesehatan. <br><br>
 
-    <!-- special section -->
+                        Seiring meningkatnya permintaan, pada tanggal 2 Februari 2020, kami membuka
+                        praktik di rumah
+                        yang dilengkapi dengan fasilitas memadai untuk berbagai jenis perawatan kesehatan.
 
-    <section class="special_section">
-      <div class="container">
-        <div class="special_container">
-          <div class="row pt-4">
-            <div class="col-md-4">
-              <div class="box b1">
-                <div class="img-box">
-                  <svg fill="#5aaccb" viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg" stroke="#5aaccb">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M448 492v20H0v-20c0-6.627 5.373-12 12-12h20V120c0-13.255 10.745-24 24-24h88V24c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v72h88c13.255 0 24 10.745 24 24v360h20c6.627 0 12 5.373 12 12zM308 192h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12zm-168 64h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12zm104 128h-40c-6.627 0-12 5.373-12 12v84h64v-84c0-6.627-5.373-12-12-12zm64-96h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12zm-116 12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40zM182 96h26v26a6 6 0 0 0 6 6h20a6 6 0 0 0 6-6V96h26a6 6 0 0 0 6-6V70a6 6 0 0 0-6-6h-26V38a6 6 0 0 0-6-6h-20a6 6 0 0 0-6 6v26h-26a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6z"
-                      ></path>
-                    </g>
-                  </svg>
+                        Hingga saat ini, praktik kami terus berkembang dan mendapatkan kepercayaan dari banyak pasien.
+                        Kami
+                        tetap berkomitmen
+                        memberikan layanan kesehatan terbaik dengan mengutamakan kenyamanan dan kesejahteraan pasien.
+                        Dengan
+                        pengalaman dan
+                        dedikasi, kami telah membangun reputasi yang solid dalam bidang homecare dan praktik kesehatan
+                        di
+                        rumah.
+                    </p>
                 </div>
-                <div class="detail-box">
-                  <h4>Fasilitas Lengkap</h4>
-                </div>
-              </div>
             </div>
-            <div class="col-md-4">
-              <div class="box b2">
-                <div class="img-box">
-                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <circle fill="#ffffff" cx="32" cy="32" r="24"></circle>
-                        <g>
-                          <path fill="#5aaccb" d="M32,0C14.328,0,0,14.328,0,32s14.328,32,32,32s32-14.328,32-32S49.672,0,32,0z M32,56 C18.746,56,8,45.254,8,32S18.746,8,32,8s24,10.746,24,24S45.254,56,32,56z"></path>
-                          <path
-                            fill="#5aaccb"
-                            d="M36,30.344V16c0-2.211-1.789-4-4-4s-4,1.789-4,4v16c0,0.523,0.105,1.039,0.309,1.527 c0.203,0.492,0.496,0.938,0.867,1.305l7.934,7.934c1.566,1.566,4.168,1.645,5.734,0.078c1.562-1.562,1.582-4.074,0.016-5.641 L36,30.344z"
-                          ></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div class="detail-box">
-                  <h4>Layanan 24/Jam</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="box b3">
-                <div class="img-box">
-                  <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <style type="text/css">
-                        .st0 {
-                          fill: #5aaccb;
-                        }
-                      </style>
-                      <g>
-                        <path class="st0" d="M254.313,431.219c0,2.938,2.359,5.281,5.266,5.281c2.922,0,5.281-2.344,5.281-5.281 c0-2.906-2.359-5.281-5.281-5.281C256.672,425.938,254.313,428.313,254.313,431.219z"></path>
-                        <path
-                          class="st0"
-                          d="M440.406,435.031c-1.875-7.031-4.531-13.313-7.813-18.938c-5.719-9.844-13.328-17.5-21.687-23.578 c-6.297-4.563-13.016-8.266-19.828-11.484c-6.953-3.25-14-5.969-20.828-8.5c-7.047-9.984-18.25-21.375-17.938-46.031 c0.203-15.891,1.453-14.531,1.688-60.531c3.781-3.094,7.344-7.047,10.422-11.906c4.031-6.375,7.281-14.313,9.484-24.094 c0.625-2.688,0.906-5.406,0.906-8.047c0-5.547-1.297-10.859-3.5-15.578c-1.531-3.266-3.484-6.281-5.734-9 c1.156-4.281,2.563-10,3.797-16.719c1.734-9.328,3.156-11.922,3.156-23.688c0-7.625-0.594-15.469-2.141-23.219 c-1.156-5.813-2.859-11.563-5.25-17.094c-1.828-4.219-4.078-8.281-6.797-12.125l26.25-39.625c1.656-2.5,2.469-5.375,2.469-8.188 c0-2.25-0.516-4.469-1.5-6.531c-0.766-1.563-1.844-3.031-3.172-4.297c-1.047-1.438-3.063-3.859-6.469-6.969 c-4.938-4.484-12.844-10.422-25.094-16.953c-10.719-5.719-23.891-11.203-39.656-15.25C295.407,2.625,277.063,0,256.032,0 c-22.641,0-42.172,3.031-58.719,7.625s-30.094,10.75-40.828,16.938c-10.625,6.141-17.375,11.406-21.594,15.344 c-2.828,2.656-4.516,4.719-5.453,6c-1.297,1.25-2.328,2.719-3.078,4.281c-0.953,2-1.438,4.188-1.438,6.406 c0,2.813,0.813,5.688,2.484,8.188l29.5,44.547c-3.844,6.734-7.156,14.219-9.547,22.516c-2.609,9.109-4.141,19.188-4.141,30.188 c0,6.875,0.594,5.5,1.875,13.094c0,0.531,0.016,1.031,0.047,1.531c0.063,0.969,0.156,1.938,0.266,2.969 c0.156,1.516,0.344,3.078,0.469,4.375c0.078,0.656,0.141,1.25,0.172,1.719c0.016,0.219,0.031,0.406,0.031,0.531l0.016,0.188v0.031 l0,0v0.875l1.844,8.25c-2.656,2.906-4.984,6.188-6.781,9.781c-2.484,4.969-3.984,10.625-3.969,16.563 c-0.016,2.625,0.281,5.344,0.906,8.047l-0.016-0.016c1.484,6.531,3.406,12.219,5.734,17.188c3.484,7.438,7.875,13.25,12.766,17.625 c0.453,0.391,0.906,0.781,1.375,1.156c0.234,46.031,1.5,44.656,1.688,60.563c0.313,24.688-10.906,36.063-17.953,46.031 c-3.047,1.156-6.141,2.313-9.25,3.563c-7.734,3.094-15.578,6.594-23.047,11c-5.594,3.297-10.984,7.125-15.938,11.656 C86.016,405.547,79.61,414,75.188,424.5c-4.438,10.5-6.906,22.922-6.891,37.594c-0.016,2.063,0.438,4.047,1.141,5.859 c0.672,1.703,1.578,3.297,2.672,4.766c2.031,2.781,4.656,5.25,7.891,7.656c5.656,4.156,13.188,8.063,22.922,11.75 c14.578,5.5,34.141,10.438,59.422,14.031S218.625,512,256,512c32.391,0,60-1.688,83.234-4.469 c17.438-2.094,32.422-4.813,45.141-7.906c9.547-2.344,17.813-4.875,24.906-7.594c5.313-2,9.969-4.094,14.031-6.25 c3.031-1.625,5.734-3.297,8.109-5c3.563-2.563,6.422-5.25,8.594-8.25c1.078-1.5,1.984-3.125,2.641-4.844 c0.656-1.75,1.047-3.656,1.047-5.594C443.703,452.063,442.547,443.078,440.406,435.031z M141.891,56.906L142,56.828l0.688-1.203 c0.203-0.297,1.469-2.016,4.688-4.844c3.344-2.938,8.797-7.063,17.328-11.984c9.609-5.547,21.875-11.141,37-15.328 c15.141-4.219,33.156-7.031,54.328-7.031c19.672,0,36.609,2.438,51.047,6.156s26.375,8.703,36.031,13.844 c11.188,5.969,17.922,11.125,21.75,14.609c1.906,1.734,3.094,3.047,3.75,3.844c0.328,0.391,0.516,0.672,0.609,0.797l0.031,0.031 l0.734,1.25l0.109,0.063l-36.844,55.625h-77.219h-77.219L141.891,56.906z M184.407,371.469c2.859-1.688,5.625-3.5,8.172-5.563 c2.75-2.188,5.281-4.656,7.516-7.406L251,382.125L227.063,426L184.407,371.469z M260,468.094l-25.578-32.703l24.172-44.359 l24.094,44.188L260,468.094z M289.657,425.125l-23.594-43.266l45.438-23.891c1.016,1.297,2.078,2.531,3.219,3.688 c3.594,3.703,7.766,6.766,12.219,9.438L289.657,425.125z M345,253.094c-3.234,2.875-6.672,4.75-10.25,6.094l-3.453,1.25 l-1.234,3.469C326.313,274.5,322.657,283,319,289.844c-3.688,6.813-7.344,11.938-11.125,15.953l-1.5,1.578l-0.469,2.125 c-1.703,7.797-3.391,10.953-3.391,21.156c0,3.156,0.156,2.531,0.516,6c0.438,4.063,1.359,7.844,2.75,11.375 c0.063,0.156,0.141,0.313,0.203,0.469l-47.547,25l-52.656-24.438c1.625-3.781,2.719-7.938,3.172-12.406 c0.359-3.469,0.531-2.844,0.531-5.984c0-10.234-1.703-13.391-3.406-21.188l-0.469-2.125l-1.484-1.578 c-3.797-4-7.453-9.125-11.125-15.969c-3.656-6.813-7.313-15.313-11.063-25.906l-1.234-3.469l-3.453-1.25 c-2.391-0.875-4.703-2.016-6.953-3.531c-3.359-2.25-6.563-5.344-9.5-9.969c-2.922-4.609-5.563-10.781-7.453-19.156 c-0.359-1.594-0.516-3.109-0.516-4.594c0-3.344,0.813-6.531,2.328-9.563c1.266-2.531,3.016-4.938,5.156-7.078 c3.578,5.422,6.563,9.734,7.641,10.828c3.516,3.516,4.016-4.781,2.344-14.094c-3.078-17.125,5.234-0.781,26.359-41.844 c33.984,7.563,88.406-20.047,108.375-31.125h8.172c1.063,7.047,4.375,21.406,14.469,34.875c13.359,17.813,20.969,51,20.969,51 s1.828-3.438,4.531-8.063c1.625,1.906,2.969,3.953,3.953,6.063c1.328,2.875,2.047,5.859,2.047,8.984 c0,1.484-0.172,3.016-0.531,4.609c-1.25,5.563-2.844,10.188-4.625,14C351.329,246.25,348.235,250.188,345,253.094z"
-                        ></path>
-                        <polygon
-                          class="st0"
-                          points="246.844,95.938 265.157,95.938 265.157,74.188 286.891,74.188 286.891,55.891 265.157,55.891 265.157,34.125 246.844,34.125 246.844,55.891 225.094,55.891 225.094,74.188 246.844,74.188 "
-                        ></polygon>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div class="detail-box">
-                  <h4>Tenaga Ahli Professional</h4>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- end special section -->
+    <section class="testimoni py-5">
+        <h1 class="text-center">Testimoni Kami</h1>
+        <div class="container">
+            <div class="swiper mySwiper pt-4 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://static.zerochan.net/Tateyama.Ayano.full.1554723.jpg"
+                                        class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+                                        sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://cdn.donmai.us/original/30/e8/30e837c30179c884a8f570ff8f79baef.jpg"
+                                        class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+                                        sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://i.pinimg.com/564x/15/6f/dd/156fddd930678a08e1de11410ff2b9cd.jpg"
+                                        class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+                                        sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi-container position-relative">
+                            <div class="testi-upper">
+                                <div class="user-img">
+                                    <img src="https://static.zerochan.net/Tateyama.Ayano.full.1554723.jpg"
+                                        class="img-thumbnail" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="ps-3">Ayano</h4>
+                                    <p class="ps-3">Layanan Kids Message</p>
+                                    <div class="bintang ps-3" style="margin-top: -15px;">
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testi-teks z-2">
+                                <p class="pb-1"><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+                                        sit.</q></p>
+                            </div>
+                            <svg class="position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1440 320">
+                                <path fill="#2779bc" fill-opacity="1"
+                                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
 
-    <!-- about section -->
-    <section class="about_section layout_padding">
-      <div class="container-fluid">
-        <div class="heading_container heading_center">
-          <h2>
-            <span class="design_dot"></span>
-            Layanan Kami
-          </h2>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 order-md-1 order-2 p-0">
-            <div class="layanan-list">
-              <div class="d-flex pt-4">
-                <div class="layanan" style="background-color: crimson">
-                  <h6>01</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Baby Massage</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4">
-                <div class="layanan">
-                  <h6>02</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Toddler Massage</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4">
-                <div class="layanan bg-success">
-                  <h6>03</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Kids Massage</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4">
-                <div class="layanan bg-primary">
-                  <h6>04</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Pediatric Massage</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4">
-                <div class="layanan bg-warning">
-                  <h6>05</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Terapi Batuk Pilek</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, nisi!</p>
-                </div>
-              </div>
-            </div>
-            <!-- Repeat layanan-list items here -->
-          </div>
-          <div class="col-md-4 order-md-2 order-1 p-0">
-            <div class="layanan-image">
-              <img src="images/layanan-iluss.png" alt="Layanan" />
-            </div>
-          </div>
-          <div class="col-md-4 order-md-3 order-3 p-0">
-            <div class="layanan-list">
-              <div class="d-flex pt-4 flex-md-row-reverse">
-                <div class="layanan" style="background-color: #468585">
-                  <h6>06</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Paket Baby Spa</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolore!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4 flex-md-row-reverse">
-                <div class="layanan" style="background-color: #50b498">
-                  <h6>07</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Hair Cut & Tindik Baby</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolore!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4 flex-md-row-reverse">
-                <div class="layanan" style="background-color: #9cdba6">
-                  <h6>08</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">KB</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolore!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4 flex-md-row-reverse">
-                <div class="layanan" style="background-color: #088395">
-                  <h6>09</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Mom Treatment</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolore!</p>
-                </div>
-              </div>
-              <div class="d-flex pt-4 flex-md-row-reverse">
-                <div class="layanan" style="background-color: #1a5319">
-                  <h6>10</h6>
-                </div>
-                <div class="layanan-teks d-flex flex-column justify-content-center">
-                  <h6 class="nama-layanan">Imunisasi</h6>
-                  <p class="deskripsi-layanan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolore!</p>
-                </div>
-              </div>
-            </div>
-            <!-- Repeat layanan-list items here -->
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- end about section -->
-
-    <!-- service section -->
-
-    <section class="service_section layout_padding-bottom">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>
-            <span class="design_dot"></span>
-            Fasilitas Kami
-          </h2>
-        </div>
-        <div class="row pt-5 justify-content-center">
-         <div class="fasilitas-container" id="baby">
-        <a data-fslightbox="gallery" href="images/fasilitas-1.jpeg">
-            <img src="images/fasilitas-1.jpeg" alt="" />
-            <p class="fasilitas-name">
-                Ruang Mandi
-            </p>
-        </a>
-    </div>
-          <div class="fasilitas-container mx-4">
-            <a data-fslightbox="gallery" href="images/fasilitas-2.jpeg">
-              <img src="images/fasilitas-2.jpeg" alt="" />
-            </a>
-          </div>
-          <div class="fasilitas-container">
-            <a data-fslightbox="gallery" href="images/fasilitas-3.jpeg">
-              <img src="images/fasilitas-3.jpeg" alt="" />
-              <p class="fasilitas-name">
-                Ruang Tunggu
-            </p>
-            </a>
-          </div>
-        </div>2
-        <!-- <div class="btn-box">
-          <a href=""> View All </a>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- end service section -->
-
-    <!-- location section -->
-    <section class="lokasi">
-      <div class="container-fluid">
-        <div class="heading_container heading_center">
-          <h2>
-            <span class="design_dot"></span>
-            Lokasi Kami
-          </h2>
-        </div>
-        <div class="row py-5 maps-container justify-content-center">
-          <div class="col-md-6 ">
-            <div class="location">
-              <i class="fa fa-map"></i>
-              <p class="klinik">Mie Gacoan </p>
-              <p>Jl. Taman Pahlawan No.43B, Nagri Kaler, <br> Kec. Purwakarta, Kabupaten Purwakarta.</p>
-            </div>
-          </div>
-          <div class="col-md-6 justify-content-end text-center text-md-start">
-            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.856841885197!2d107.43956207459387!3d-6.539756163931117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690f31ffbd773f%3A0x724d9cc28f85d448!2sMie%20Gacoan%20-%20Purwakarta!5e0!3m2!1sid!2ssg!4v1720191108039!5m2!1sid!2ssg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- end location section -->
-
-    <!-- client section -->
-    <section class="client_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>
-            <span class="design_dot"></span>
-            Testimonial
-          </h2>
-        </div>
-      </div>
-      <div class="container px-0">
-        <div id="customCarousel2" class="carousel carousel-fade" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="box">
-                <div class="client_info">
-                  <div class="client_name">
-                    <h5>Clark Norris</h5>
-                    <h6>Default model text</h6>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <section class="info_section layout_padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="info_course">
+                            <h5>PMB Novi Noer Asnie</h5>
+                            <p>Praktik Mandiri Bidan Novi Noer Asnie berkomitmen untuk
+                                memberikan pelayanan kesehatan yang holistik, profesional, dan ramah
+                                kepada seluruh pasien. Kami Mulai Beroperasi Dari Tahun 2020 Sampai Sekarang</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-5 offset-md-1">
+                        <div class="info_news">
+                            <h5>IKUTI SOSIAL MEDIA KAMI</h5>
+                            <div class="info_contact">
+                                <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Dusun Krajan No.36 RT 01/01
+                                    Des.Sirnabaya Kec.Teluk Jambe Timur Karawang </a>
+                                <a href=""> <i class="fa fa-envelope" aria-hidden="true"></i> novinoerasnie@gmail.com </a>
+                                <a href=""> <i class="fa fa-phone" aria-hidden="true"></i> 0878-0344-1999 </a>
+                                <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> 0878-0344-1999 </a>
+                                <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> Almahyra_BabySpa_Karawang
+                                </a>
+                                <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> Almahyra Babyspa Karawang </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+        
+        <footer class="container-fluid footer_section">
+            <div class="container">
                 <p>
-                  editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                    &copy; <span id="displayYear"></span> All Rights Reserved By
+                    <a href="">Ayano</a>
                 </p>
-              </div>
             </div>
-            <div class="carousel-item">
-              <div class="box">
-                <div class="client_info">
-                  <div class="client_name">
-                    <h5>Chris Jonas</h5>
-                    <h6>Default model text</h6>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a
-                  search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="box">
-                <div class="client_info">
-                  <div class="client_name">
-                    <h5>Brad Johns</h5>
-                    <h6>Default model text</h6>
-                  </div>
-                  <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>
-                  Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel_btn-box">
-            <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
-              <i class="fa fa-angle-left" aria-hidden="true"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end client section -->
+        </footer>
 
 
-    <!-- info section -->
-    <section class="info_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="info_menu">
-              <h5>AKSES SINGKAT</h5>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html"> Services </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="appointment.html"> Appointment </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="info_course">
-              <h5>[Nama PMB] </h5>
-              <p>[Deskripsi Singkat Mengenai PMB , Misal Tahun Berdiri / Informasi Umum Lainnya]</p>
-            </div>
-          </div>
-
-          <div class="col-md-5 offset-md-1">
-            <div class="info_news">
-              <h5>IKUTI SOSIAL MEDIA KAMI</h5>
-              <div class="info_contact">
-                <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> [Alamat] </a>
-                <a href=""> <i class="fa fa-envelope" aria-hidden="true"></i> [email] </a>
-                <a href=""> <i class="fa fa-phone" aria-hidden="true"></i> [No HP] </a>
-                <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> [No wa] </a>
-                <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> [nama IG] </a>
-                <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> [nama facebook] </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end info section -->
-
-    <!-- footer section -->
-    <footer class="container-fluid footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="">Ayano</a>
-        </p>
-      </div>
-    </footer>
-    <!-- footer section -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- nice select -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
     <!-- datepicker -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-    <!-- End Google Map -->
-    <!-- Fs LightBox -->
-    <script src="js/fslightbox.js"></script>
-  </body>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is <= 640px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
 </html>

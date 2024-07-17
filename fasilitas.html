@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <div class="logo d-flex align-items-center gap-2">
+                <a class="navbar-brand fw-bold fs-4" href="#"> PMB </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" onclick="activateLink(this)">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="layanan.html" onclick="activateLink(this)">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="fasilitas.html" onclick="activateLink(this)">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" onclick="activateLink(this)">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lokasi.html" onclick="activateLink(this)">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html" onclick="activateLink(this)">Tentang Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sub-pages">
+        <div class="container">
+            <div class="row">
+                <di class="col-md-6 d-flex align-items-center justify-content-center order-2 order-md-1">
+                    <div>
+                        <h1 class="text-white fw-bold text-center text-md-start">Fasilitas Kami</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium eius
+                            consectetur molestias eveniet
+                            quasi praesentium porro debitis quos nulla.</p>
+                    </div>
+
+                </di>
+                <di class="col-md-6 d-flex align-items-center order-1 order-md-2">
+                    <img src="images/clinic-room.png" class="img-fluid" alt="">
+                </di>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_section layout_padding-bottom py-5" id="fasilitas">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>
+                    <span class="design_dot"></span>
+                    Fasilitas Kami
+                </h2>
+            </div>
+            <div class="row  justify-content-center">
+                <div class="fasilitas-container" id="baby">
+                    <a data-fslightbox="gallery" href="images/fasilitas-1.jpeg">
+                        <img src="images/fasilitas-1.jpeg" alt="" />
+                        <p class="fasilitas-name">Ruang Mandi</p>
+                    </a>
+                </div>
+                <div class="fasilitas-container mx-4">
+                    <a data-fslightbox="gallery" href="images/fasilitas-2.jpeg">
+                        <img src="images/fasilitas-2.jpeg" alt="" />
+                    </a>
+                </div>
+                <div class="fasilitas-container">
+                    <a data-fslightbox="gallery" href="images/fasilitas-3.jpeg">
+                        <img src="images/fasilitas-3.jpeg" alt="" />
+                        <p class="fasilitas-name">Ruang Tunggu</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info_section layout_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="info_course">
+                        <h5>PMB Novi Noer Asnie</h5>
+                        <p>Praktik Mandiri Bidan Novi Noer Asnie berkomitmen untuk
+                            memberikan pelayanan kesehatan yang holistik, profesional, dan ramah
+                            kepada seluruh pasien. Kami Mulai Beroperasi Dari Tahun 2020 Sampai Sekarang</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-5 offset-md-1">
+                    <div class="info_news">
+                        <h5>IKUTI SOSIAL MEDIA KAMI</h5>
+                        <div class="info_contact">
+                            <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Dusun Krajan No.36 RT 01/01
+                                Des.Sirnabaya Kec.Teluk Jambe Timur Karawang </a>
+                            <a href=""> <i class="fa fa-envelope" aria-hidden="true"></i> novinoerasnie@gmail.com </a>
+                            <a href=""> <i class="fa fa-phone" aria-hidden="true"></i> 0878-0344-1999 </a>
+                            <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> 0878-0344-1999 </a>
+                            <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i> Almahyra_BabySpa_Karawang
+                            </a>
+                            <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> Almahyra Babyspa Karawang </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="">Ayano</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    <script src="js/fslightbox.js"></script>
+</body>
+
+</html>
